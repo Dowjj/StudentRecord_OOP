@@ -85,6 +85,7 @@ public class Dashboard extends javax.swing.JFrame {
         btnviewschedule = new javax.swing.JButton();
         cmbcollege = new javax.swing.JComboBox<>();
         btnviewgrades = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -282,7 +283,7 @@ public class Dashboard extends javax.swing.JFrame {
         getContentPane().add(btnviewschedule, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 100, 160, -1));
 
         cmbcollege.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        cmbcollege.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "College", "S.Y & Semester", "Course", "Subject", "Student", "Employee" }));
+        cmbcollege.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "College", "College", "S.Y & Semester", "Course", "Student", "Employee", "Grades" }));
         cmbcollege.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmbcollegeActionPerformed(evt);
@@ -293,7 +294,11 @@ public class Dashboard extends javax.swing.JFrame {
         btnviewgrades.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         btnviewgrades.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Beige and Black Minimalistic Modern Fashion Sale Blog Banner (3639 x 2138 px) (1360 x 730 px) (1).png"))); // NOI18N
         btnviewgrades.setText("jLabel1");
-        getContentPane().add(btnviewgrades, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, -70, 1360, 870));
+        getContentPane().add(btnviewgrades, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -70, 1360, 870));
+
+        jLabel12.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        jLabel12.setText("Search:");
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 220, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -405,6 +410,7 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> cmbcollege;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

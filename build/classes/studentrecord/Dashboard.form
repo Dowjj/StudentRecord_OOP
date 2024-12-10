@@ -517,13 +517,14 @@
           <Font name="Segoe UI Historic" size="14" style="1"/>
         </Property>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="6">
+          <StringArray count="7">
             <StringItem index="0" value="College"/>
-            <StringItem index="1" value="S.Y &amp; Semester"/>
-            <StringItem index="2" value="Course"/>
-            <StringItem index="3" value="Subject"/>
+            <StringItem index="1" value="College"/>
+            <StringItem index="2" value="S.Y &amp; Semester"/>
+            <StringItem index="3" value="Course"/>
             <StringItem index="4" value="Student"/>
             <StringItem index="5" value="Employee"/>
+            <StringItem index="6" value="Grades"/>
           </StringArray>
         </Property>
       </Properties>
@@ -551,7 +552,20 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="-20" y="-70" width="1360" height="870"/>
+          <AbsoluteConstraints x="0" y="-70" width="1360" height="870"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel12">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Verdana" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Search:"/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="380" y="220" width="-1" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>

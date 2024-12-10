@@ -54,30 +54,50 @@ public class Employee extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        txtbday = new javax.swing.JTextField();
+        txtemail = new javax.swing.JTextField();
+        txtcellnum = new javax.swing.JTextField();
+        jLabel10 = new javax.swing.JLabel();
+        txt2status = new javax.swing.JTextField();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        tblemployee = new javax.swing.JTable();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        txtdresigned = new javax.swing.JTextField();
+        jLabel18 = new javax.swing.JLabel();
+        txtdstarted = new javax.swing.JTextField();
         cmbEmployee = new javax.swing.JComboBox<>();
+        txtgender = new javax.swing.JTextField();
         btnaddschedule = new javax.swing.JButton();
         btn2recordgrade = new javax.swing.JButton();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        txtlastname = new javax.swing.JTextField();
         btnviewschedule = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        txtfirstname = new javax.swing.JTextField();
+        jLabel8 = new javax.swing.JLabel();
         btn2viewgrade = new javax.swing.JButton();
         jLabel11 = new javax.swing.JLabel();
         txtSearch = new javax.swing.JTextField();
         btn2search = new javax.swing.JButton();
+        txtaddress = new javax.swing.JTextField();
         btnadd = new javax.swing.JButton();
         btn2edit = new javax.swing.JButton();
         btndelete = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
         txtemployeeid = new javax.swing.JTextField();
         btnviewgrades = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/logo (4).png"))); // NOI18N
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, -10, 420, 90));
 
         jLabel4.setFont(new java.awt.Font("Verdana", 0, 29)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
@@ -93,14 +113,114 @@ public class Employee extends javax.swing.JFrame {
         jLabel2.setText("jLabel2");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 80, 80, -1));
 
+        jLabel7.setFont(new java.awt.Font("Segoe UI Historic", 1, 18)); // NOI18N
+        jLabel7.setText("Address:");
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 270, -1, -1));
+
+        jLabel12.setFont(new java.awt.Font("Segoe UI Historic", 1, 18)); // NOI18N
+        jLabel12.setText("Email : ");
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 480, -1, -1));
+
+        txtbday.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txtbday.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtbdayActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtbday, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 370, 180, 30));
+
+        txtemail.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txtemail.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtemailActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtemail, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 510, 180, 30));
+
+        txtcellnum.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txtcellnum.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtcellnumActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtcellnum, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 650, 180, 30));
+
+        jLabel10.setFont(new java.awt.Font("Segoe UI Historic", 1, 18)); // NOI18N
+        jLabel10.setText("First Name :");
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, -1, -1));
+
+        txt2status.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txt2status.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt2statusActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txt2status, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 440, 180, 30));
+
+        tblemployee.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4", "Title 5"
+            }
+        ));
+        tblemployee.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tblemployeeMouseClicked(evt);
+            }
+        });
+        jScrollPane1.setViewportView(tblemployee);
+
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 260, 860, 460));
+
+        jLabel14.setFont(new java.awt.Font("Segoe UI Historic", 1, 18)); // NOI18N
+        jLabel14.setText("Cell Number :");
+        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 620, -1, -1));
+
+        jLabel17.setFont(new java.awt.Font("Segoe UI Historic", 1, 18)); // NOI18N
+        jLabel17.setText("Date Started :");
+        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 480, -1, -1));
+
+        txtdresigned.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txtdresigned.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtdresignedActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtdresigned, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 580, 180, 30));
+
+        jLabel18.setFont(new java.awt.Font("Segoe UI Historic", 1, 18)); // NOI18N
+        jLabel18.setText("Date Resigned :");
+        getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 550, -1, -1));
+
+        txtdstarted.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txtdstarted.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtdstartedActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtdstarted, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 510, 180, 30));
+
         cmbEmployee.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        cmbEmployee.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Employee", "College", "S.Y & Semester", "Course", "Subject", "Student" }));
+        cmbEmployee.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Employee", "College", "S.Y & Semester", "Course", "Student", "Employee", "Grades" }));
         cmbEmployee.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cmbcollegeActionPerformed(evt);
+                cmbEmployeeActionPerformed(evt);
             }
         });
         getContentPane().add(cmbEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 100, 160, 30));
+
+        txtgender.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txtgender.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtgenderActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtgender, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 580, 180, 30));
 
         btnaddschedule.setBackground(new java.awt.Color(0, 0, 69));
         btnaddschedule.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
@@ -121,10 +241,26 @@ public class Employee extends javax.swing.JFrame {
         btn2recordgrade.setText("Record Grade");
         btn2recordgrade.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnrecordgradeActionPerformed(evt);
+                btn2recordgradeActionPerformed(evt);
             }
         });
         getContentPane().add(btn2recordgrade, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 100, 160, -1));
+
+        jLabel16.setFont(new java.awt.Font("Segoe UI Historic", 1, 18)); // NOI18N
+        jLabel16.setText("Status :");
+        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 410, -1, -1));
+
+        jLabel13.setFont(new java.awt.Font("Segoe UI Historic", 1, 18)); // NOI18N
+        jLabel13.setText("Gender :");
+        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 550, -1, -1));
+
+        txtlastname.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txtlastname.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtlastnameActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtlastname, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 370, 180, 30));
 
         btnviewschedule.setBackground(new java.awt.Color(0, 0, 69));
         btnviewschedule.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
@@ -138,6 +274,25 @@ public class Employee extends javax.swing.JFrame {
         });
         getContentPane().add(btnviewschedule, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 100, 160, -1));
 
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/logo (4).png"))); // NOI18N
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, -10, 420, 90));
+
+        jLabel15.setFont(new java.awt.Font("Segoe UI Historic", 1, 18)); // NOI18N
+        jLabel15.setText("Birthday :");
+        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 340, -1, -1));
+
+        txtfirstname.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txtfirstname.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtfirstnameActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtfirstname, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 440, 180, 30));
+
+        jLabel8.setFont(new java.awt.Font("Segoe UI Historic", 1, 18)); // NOI18N
+        jLabel8.setText("Last Name :");
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 340, -1, -1));
+
         btn2viewgrade.setBackground(new java.awt.Color(0, 0, 69));
         btn2viewgrade.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         btn2viewgrade.setForeground(new java.awt.Color(255, 255, 255));
@@ -145,7 +300,7 @@ public class Employee extends javax.swing.JFrame {
         btn2viewgrade.setText("View Grades");
         btn2viewgrade.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnviewgradeActionPerformed(evt);
+                btn2viewgradeActionPerformed(evt);
             }
         });
         getContentPane().add(btn2viewgrade, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 100, 160, -1));
@@ -157,7 +312,7 @@ public class Employee extends javax.swing.JFrame {
         txtSearch.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         txtSearch.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                searchActionPerformed(evt);
+                txtSearchActionPerformed(evt);
             }
         });
         getContentPane().add(txtSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 210, 230, 40));
@@ -166,10 +321,18 @@ public class Employee extends javax.swing.JFrame {
         btn2search.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/search.png"))); // NOI18N
         btn2search.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnsearchActionPerformed(evt);
+                btn2searchActionPerformed(evt);
             }
         });
         getContentPane().add(btn2search, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 210, 80, 40));
+
+        txtaddress.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txtaddress.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtaddressActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtaddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 300, 180, 30));
 
         btnadd.setBackground(new java.awt.Color(0, 0, 69));
         btnadd.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
@@ -204,20 +367,23 @@ public class Employee extends javax.swing.JFrame {
 
         jLabel6.setFont(new java.awt.Font("Segoe UI Historic", 1, 18)); // NOI18N
         jLabel6.setText("Employee ID :");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, -1, -1));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, -1, -1));
 
         txtemployeeid.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         txtemployeeid.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtcollegecodeActionPerformed(evt);
+                txtemployeeidActionPerformed(evt);
             }
         });
-        getContentPane().add(txtemployeeid, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, 160, 30));
+        getContentPane().add(txtemployeeid, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 300, 180, 30));
 
         btnviewgrades.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         btnviewgrades.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Beige and Black Minimalistic Modern Fashion Sale Blog Banner (3639 x 2138 px) (1360 x 730 px) (1).png"))); // NOI18N
-        btnviewgrades.setText("jLabel1");
-        getContentPane().add(btnviewgrades, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -70, 1360, 870));
+        getContentPane().add(btnviewgrades, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1370, 730));
+
+        jLabel9.setFont(new java.awt.Font("Segoe UI Historic", 1, 18)); // NOI18N
+        jLabel9.setText("Last Name :");
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 340, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -261,10 +427,6 @@ public class Employee extends javax.swing.JFrame {
     private void txtemployeeidActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtemployeeidActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtemployeeidActionPerformed
-
-    private void txtcollegecode1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtcollegecode1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtcollegecode1ActionPerformed
 
     private void txtaddressActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtaddressActionPerformed
         // TODO add your handling code here:
@@ -385,7 +547,6 @@ public class Employee extends javax.swing.JFrame {
     private javax.swing.JTextField txtaddress;
     private javax.swing.JTextField txtbday;
     private javax.swing.JTextField txtcellnum;
-    private javax.swing.JTextField txtcollegecode1;
     private javax.swing.JTextField txtdresigned;
     private javax.swing.JTextField txtdstarted;
     private javax.swing.JTextField txtemail;

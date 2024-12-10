@@ -26,7 +26,44 @@ public class Subject extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btn1viewgrades = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        txt4dateclosed = new javax.swing.JTextField();
+        txt4curriculum = new javax.swing.JTextField();
+        jLabel12 = new javax.swing.JLabel();
+        txt4dateopened = new javax.swing.JTextField();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        txt4status = new javax.swing.JTextField();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        txt4collegecode = new javax.swing.JTextField();
+        txt4description = new javax.swing.JTextField();
+        txt4subjectcode = new javax.swing.JTextField();
+        jLabel7 = new javax.swing.JLabel();
+        txt4units = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
+        btn1delete = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        tblcourse = new javax.swing.JTable();
+        btn1add = new javax.swing.JButton();
+        btn1search = new javax.swing.JButton();
+        searchcourse = new javax.swing.JTextField();
+        btn1edit = new javax.swing.JButton();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        btn1addschedule = new javax.swing.JButton();
+        cmbsubject = new javax.swing.JComboBox<>();
+        btn1recordgrade = new javax.swing.JButton();
+        btn1viewgrade = new javax.swing.JButton();
+        btn1viewschedule = new javax.swing.JButton();
+        subjectbg1 = new javax.swing.JLabel();
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/transparent.png"))); // NOI18N
+        jLabel2.setText("jLabel2");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -36,10 +73,256 @@ public class Subject extends javax.swing.JFrame {
         });
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btn1viewgrades.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        btn1viewgrades.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Beige and Black Minimalistic Modern Fashion Sale Blog Banner (3639 x 2138 px) (1360 x 730 px) (1).png"))); // NOI18N
-        btn1viewgrades.setText("jLabel1");
-        getContentPane().add(btn1viewgrades, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, 1360, 770));
+        jLabel18.setFont(new java.awt.Font("Segoe UI Historic", 1, 18)); // NOI18N
+        jLabel18.setText("Date_Closed:");
+        getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 450, -1, -1));
+
+        txt4dateclosed.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txt4dateclosed.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt4dateclosedActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txt4dateclosed, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 480, 190, 30));
+
+        txt4curriculum.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txt4curriculum.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt4curriculumActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txt4curriculum, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 560, 190, 30));
+
+        jLabel12.setFont(new java.awt.Font("Segoe UI Historic", 1, 18)); // NOI18N
+        jLabel12.setText("Curriculum:");
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 530, -1, -1));
+
+        txt4dateopened.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txt4dateopened.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt4dateopenedActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txt4dateopened, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 400, 190, 30));
+
+        jLabel16.setFont(new java.awt.Font("Segoe UI Historic", 1, 18)); // NOI18N
+        jLabel16.setText("Date_Opened:");
+        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 370, -1, -1));
+
+        jLabel9.setFont(new java.awt.Font("Verdana", 1, 30)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(0, 0, 69));
+        jLabel9.setText("Subject");
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, -1, -1));
+
+        jLabel10.setFont(new java.awt.Font("Segoe UI Historic", 1, 18)); // NOI18N
+        jLabel10.setText("Units:");
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 450, -1, -1));
+
+        txt4status.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txt4status.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt4statusActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txt4status, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 320, 190, 30));
+
+        jLabel15.setFont(new java.awt.Font("Segoe UI Historic", 1, 18)); // NOI18N
+        jLabel15.setText("Status:");
+        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 290, -1, -1));
+
+        jLabel8.setFont(new java.awt.Font("Segoe UI Historic", 1, 18)); // NOI18N
+        jLabel8.setText("Description:");
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 370, -1, -1));
+
+        txt4collegecode.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txt4collegecode.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt4collegecodeActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txt4collegecode, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 640, 190, 30));
+
+        txt4description.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txt4description.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt4descriptionActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txt4description, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 400, 190, 30));
+
+        txt4subjectcode.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txt4subjectcode.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt4subjectcodeActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txt4subjectcode, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, 190, 30));
+
+        jLabel7.setFont(new java.awt.Font("Segoe UI Historic", 1, 18)); // NOI18N
+        jLabel7.setText("College_Code:");
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 600, -1, 40));
+
+        txt4units.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txt4units.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt4unitsActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txt4units, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 480, 190, 30));
+
+        jLabel6.setFont(new java.awt.Font("Segoe UI Historic", 1, 18)); // NOI18N
+        jLabel6.setText("Subject_Code:");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, -1, -1));
+
+        btn1delete.setBackground(new java.awt.Color(0, 0, 69));
+        btn1delete.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        btn1delete.setForeground(new java.awt.Color(255, 255, 255));
+        btn1delete.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/trash.png"))); // NOI18N
+        btn1delete.setText("DELETE");
+        btn1delete.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn1deleteActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btn1delete, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 210, 130, 40));
+
+        tblcourse.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null}
+            },
+            new String [] {
+                "Subject_code", "Description", "Units", "Curriculum", "College_code", "Status", "Date_Opened", "Date_Closed"
+            }
+        ));
+        tblcourse.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tblcourseMouseClicked(evt);
+            }
+        });
+        jScrollPane1.setViewportView(tblcourse);
+
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 260, 900, 450));
+
+        btn1add.setBackground(new java.awt.Color(0, 0, 69));
+        btn1add.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        btn1add.setForeground(new java.awt.Color(255, 255, 255));
+        btn1add.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/add (1).png"))); // NOI18N
+        btn1add.setText("ADD");
+        btn1add.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn1addActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btn1add, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 210, 130, -1));
+
+        btn1search.setBackground(new java.awt.Color(0, 0, 69));
+        btn1search.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/search.png"))); // NOI18N
+        btn1search.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn1searchActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btn1search, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 210, 80, 40));
+
+        searchcourse.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        searchcourse.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                searchcourseMouseClicked(evt);
+            }
+        });
+        searchcourse.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                searchcourseActionPerformed(evt);
+            }
+        });
+        getContentPane().add(searchcourse, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 210, 230, 40));
+
+        btn1edit.setBackground(new java.awt.Color(0, 0, 69));
+        btn1edit.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        btn1edit.setForeground(new java.awt.Color(255, 255, 255));
+        btn1edit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/editing.png"))); // NOI18N
+        btn1edit.setText("EDIT");
+        getContentPane().add(btn1edit, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 210, 130, 40));
+
+        jLabel11.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        jLabel11.setText("Search:");
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 220, -1, -1));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/transparent.png"))); // NOI18N
+        jLabel4.setText("jLabel2");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 84, 90, 80));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/logo (4).png"))); // NOI18N
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, -10, 420, 90));
+
+        jLabel5.setFont(new java.awt.Font("Verdana", 0, 29)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("Student Record");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 240, 70));
+
+        btn1addschedule.setBackground(new java.awt.Color(0, 0, 69));
+        btn1addschedule.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
+        btn1addschedule.setForeground(new java.awt.Color(255, 255, 255));
+        btn1addschedule.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/add (2).png"))); // NOI18N
+        btn1addschedule.setText("Add Schedule");
+        btn1addschedule.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn1addscheduleActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btn1addschedule, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 100, 160, -1));
+
+        cmbsubject.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
+        cmbsubject.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Subject", "College", "S.Y & Semester", "Course", "Student", "Employee", "Grades" }));
+        cmbsubject.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbsubjectActionPerformed(evt);
+            }
+        });
+        getContentPane().add(cmbsubject, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 100, 160, 30));
+
+        btn1recordgrade.setBackground(new java.awt.Color(0, 0, 69));
+        btn1recordgrade.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
+        btn1recordgrade.setForeground(new java.awt.Color(255, 255, 255));
+        btn1recordgrade.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/edit (3).png"))); // NOI18N
+        btn1recordgrade.setText("Record Grade");
+        btn1recordgrade.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn1recordgradeActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btn1recordgrade, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 100, 160, -1));
+
+        btn1viewgrade.setBackground(new java.awt.Color(0, 0, 69));
+        btn1viewgrade.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
+        btn1viewgrade.setForeground(new java.awt.Color(255, 255, 255));
+        btn1viewgrade.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/eye.png"))); // NOI18N
+        btn1viewgrade.setText("View Grades");
+        btn1viewgrade.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn1viewgradeActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btn1viewgrade, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 100, 160, -1));
+
+        btn1viewschedule.setBackground(new java.awt.Color(0, 0, 69));
+        btn1viewschedule.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
+        btn1viewschedule.setForeground(new java.awt.Color(255, 255, 255));
+        btn1viewschedule.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/view (1).png"))); // NOI18N
+        btn1viewschedule.setText("View Schedule");
+        btn1viewschedule.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn1viewscheduleActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btn1viewschedule, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 100, 160, -1));
+
+        subjectbg1.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
+        subjectbg1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/Beige and Black Minimalistic Modern Fashion Sale Blog Banner (3639 x 2138 px) (1360 x 730 px) (1).png"))); // NOI18N
+        getContentPane().add(subjectbg1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -40, 1370, 820));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -48,6 +331,83 @@ public class Subject extends javax.swing.JFrame {
         // TODO add your handling code here:
         refresh();
     }//GEN-LAST:event_formWindowActivated
+
+    private void cmbsubjectActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbsubjectActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cmbsubjectActionPerformed
+
+    private void btn1addscheduleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1addscheduleActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn1addscheduleActionPerformed
+
+    private void btn1recordgradeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1recordgradeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn1recordgradeActionPerformed
+
+    private void btn1viewscheduleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1viewscheduleActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn1viewscheduleActionPerformed
+
+    private void btn1viewgradeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1viewgradeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn1viewgradeActionPerformed
+
+    private void searchcourseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_searchcourseMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_searchcourseMouseClicked
+
+    private void searchcourseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchcourseActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_searchcourseActionPerformed
+
+    private void btn1searchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1searchActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn1searchActionPerformed
+
+    private void btn1addActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1addActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn1addActionPerformed
+
+    private void btn1deleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1deleteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn1deleteActionPerformed
+
+    private void tblcourseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblcourseMouseClicked
+        // TODO add your handling code here:
+        int row = tblcourse.getSelectedRow();
+    }//GEN-LAST:event_tblcourseMouseClicked
+
+    private void txt4unitsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt4unitsActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt4unitsActionPerformed
+
+    private void txt4subjectcodeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt4subjectcodeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt4subjectcodeActionPerformed
+
+    private void txt4descriptionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt4descriptionActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt4descriptionActionPerformed
+
+    private void txt4collegecodeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt4collegecodeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt4collegecodeActionPerformed
+
+    private void txt4statusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt4statusActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt4statusActionPerformed
+
+    private void txt4dateopenedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt4dateopenedActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt4dateopenedActionPerformed
+
+    private void txt4curriculumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt4curriculumActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt4curriculumActionPerformed
+
+    private void txt4dateclosedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt4dateclosedActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt4dateclosedActionPerformed
 
     /**
      * @param args the command line arguments
@@ -85,6 +445,40 @@ public class Subject extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel btn1viewgrades;
+    private javax.swing.JButton btn1add;
+    private javax.swing.JButton btn1addschedule;
+    private javax.swing.JButton btn1delete;
+    private javax.swing.JButton btn1edit;
+    private javax.swing.JButton btn1recordgrade;
+    private javax.swing.JButton btn1search;
+    private javax.swing.JButton btn1viewgrade;
+    private javax.swing.JButton btn1viewschedule;
+    private javax.swing.JComboBox<String> cmbsubject;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextField searchcourse;
+    private javax.swing.JLabel subjectbg1;
+    private javax.swing.JTable tblcourse;
+    private javax.swing.JTextField txt4collegecode;
+    private javax.swing.JTextField txt4curriculum;
+    private javax.swing.JTextField txt4dateclosed;
+    private javax.swing.JTextField txt4dateopened;
+    private javax.swing.JTextField txt4description;
+    private javax.swing.JTextField txt4status;
+    private javax.swing.JTextField txt4subjectcode;
+    private javax.swing.JTextField txt4units;
     // End of variables declaration//GEN-END:variables
 }
