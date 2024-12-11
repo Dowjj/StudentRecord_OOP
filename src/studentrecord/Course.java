@@ -168,7 +168,7 @@ public class Course extends javax.swing.JFrame {
         getContentPane().add(labelCourse, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, -1, -1));
 
         cmbcourse.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        cmbcourse.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Course", "College", "S.Y & Semester", "Subject", "Student", "Employee" }));
+        cmbcourse.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Course", "College", "S.Y & Semester", "Course", "Student", "Employee", "Grades" }));
         cmbcourse.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmbcourseActionPerformed(evt);
