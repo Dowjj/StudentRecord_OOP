@@ -307,7 +307,7 @@ public class Employee extends javax.swing.JFrame {
 
         jLabel11.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
         jLabel11.setText("Search:");
-        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 220, -1, -1));
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 220, -1, -1));
 
         txtSearch.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         txtSearch.addActionListener(new java.awt.event.ActionListener() {
@@ -315,7 +315,7 @@ public class Employee extends javax.swing.JFrame {
                 txtSearchActionPerformed(evt);
             }
         });
-        getContentPane().add(txtSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 210, 230, 40));
+        getContentPane().add(txtSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 210, 230, 40));
 
         btn2search.setBackground(new java.awt.Color(0, 0, 69));
         btn2search.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/search.png"))); // NOI18N
@@ -324,7 +324,7 @@ public class Employee extends javax.swing.JFrame {
                 btn2searchActionPerformed(evt);
             }
         });
-        getContentPane().add(btn2search, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 210, 80, 40));
+        getContentPane().add(btn2search, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 210, 80, 40));
 
         txtaddress.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         txtaddress.addActionListener(new java.awt.event.ActionListener() {
